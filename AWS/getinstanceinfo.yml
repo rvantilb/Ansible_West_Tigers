@@ -16,9 +16,11 @@
          region: "{{region}}"
          name: "{{ instance_name }}"
        register: instance_info
+       
      - name:
        debug:
           msg: "{{instance_info}}"
+          
      - name:
        debug:
           msg: "{{instance_info.instances[0].instance_id}}"
