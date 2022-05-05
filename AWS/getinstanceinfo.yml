@@ -13,8 +13,8 @@
     tasks:
      - name: Get instances with {{instance_name}} in {{region}}
        amazon.aws.ec2_instance:
-        region: "{{region}}"
-        name: "{{ instance_name }}"
+         region: "{{region}}"
+         name: "{{ instance_name }}"
        register: instance_info
      - name:
        debug:
